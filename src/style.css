@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font  */
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraBold.eot');
+  src: url('../font/Mondo-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraBold.woff2') format('woff2'),
+      url('../font/Mondo-ExtraBold.woff') format('woff'),
+      url('../font/Mondo-ExtraBold.ttf') format('truetype'),
+      url('../font/Mondo-ExtraBold.svg#Mondo-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraBoldItalic.eot');
+  src: url('../font/Mondo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraBoldItalic.woff2') format('woff2'),
+      url('../font/Mondo-ExtraBoldItalic.woff') format('woff'),
+      url('../font/Mondo-ExtraBoldItalic.ttf') format('truetype'),
+      url('../font/Mondo-ExtraBoldItalic.svg#Mondo-ExtraBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraLight.eot');
+  src: url('../font/Mondo-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraLight.woff2') format('woff2'),
+      url('../font/Mondo-ExtraLight.woff') format('woff'),
+      url('../font/Mondo-ExtraLight.ttf') format('truetype'),
+      url('../font/Mondo-ExtraLight.svg#Mondo-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Light.eot');
+  src: url('../font/Mondo-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Light.woff2') format('woff2'),
+      url('../font/Mondo-Light.woff') format('woff'),
+      url('../font/Mondo-Light.ttf') format('truetype'),
+      url('../font/Mondo-Light.svg#Mondo-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Ligth';
+  src: url('../font/Mondo-LigthItalic.eot');
+  src: url('../font/Mondo-LigthItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-LigthItalic.woff2') format('woff2'),
+      url('../font/Mondo-LigthItalic.woff') format('woff'),
+      url('../font/Mondo-LigthItalic.ttf') format('truetype'),
+      url('../font/Mondo-LigthItalic.svg#Mondo-LigthItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Italic.eot');
+  src: url('../font/Mondo-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Italic.woff2') format('woff2'),
+      url('../font/Mondo-Italic.woff') format('woff'),
+      url('../font/Mondo-Italic.ttf') format('truetype'),
+      url('../font/Mondo-Italic.svg#../font/Mondo-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Medium.eot');
+  src: url('../font/Mondo-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Medium.woff2') format('woff2'),
+      url('../font/Mondo-Medium.woff') format('woff'),
+      url('../font/Mondo-Medium.ttf') format('truetype'),
+      url('../font/Mondo-Medium.svg#../font/Mondo-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraLightItalic.eot');
+  src: url('../font/Mondo-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraLightItalic.woff2') format('woff2'),
+      url('../font/Mondo-ExtraLightItalic.woff') format('woff'),
+      url('../font/Mondo-ExtraLightItalic.ttf') format('truetype'),
+      url('../font/Mondo-ExtraLightItalic.svg#Mondo-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/../font/Mondo-MediumItalic.eot');
+  src: url('../font/../font/Mondo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/../font/Mondo-MediumItalic.woff2') format('woff2'),
+      url('../font/../font/Mondo-MediumItalic.woff') format('woff'),
+      url('../font/../font/Mondo-MediumItalic.ttf') format('truetype'),
+      url('../font/../font/Mondo-MediumItalic.svg#Mondo-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-ThinItalic.eot');
+  src: url('../font/Mondo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ThinItalic.woff2') format('woff2'),
+      url('../font/Mondo-ThinItalic.woff') format('woff'),
+      url('../font/Mondo-ThinItalic.ttf') format('truetype'),
+      url('../font/Mondo-ThinItalic.svg#Mondo-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Black.eot');
+  src: url('../font/Mondo-Black.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Black.woff2') format('woff2'),
+      url('../font/Mondo-Black.woff') format('woff'),
+      url('../font/Mondo-Black.ttf') format('truetype'),
+      url('../font/Mondo-Black.svg#Mondo-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Thin.eot');
+  src: url('../font/Mondo-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Thin.woff2') format('woff2'),
+      url('../font/Mondo-Thin.woff') format('woff'),
+      url('../font/Mondo-Thin.ttf') format('truetype'),
+      url('../font/Mondo-Thin.svg#Mondo-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Regular.eot');
+  src: url('../font/Mondo-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Regular.woff2') format('woff2'),
+      url('../font/Mondo-Regular.woff') format('woff'),
+      url('../font/Mondo-Regular.ttf') format('truetype'),
+      url('../font/Mondo-Regular.svg#Mondo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-BoldItalic.eot');
+  src: url('../font/Mondo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-BoldItalic.woff2') format('woff2'),
+      url('../font/Mondo-BoldItalic.woff') format('woff'),
+      url('../font/Mondo-BoldItalic.ttf') format('truetype'),
+      url('../font/Mondo-BoldItalic.svg#Mondo-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Book';
+  src: url('../font/Mondo-Book.eot');
+  src: url('../font/Mondo-Book.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Book.woff2') format('woff2'),
+      url('../font/Mondo-Book.woff') format('woff'),
+      url('../font/Mondo-Book.ttf') format('truetype'),
+      url('../font/Mondo-Book.svg#Mondo-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-BlackItalic.eot');
+  src: url('../font/Mondo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-BlackItalic.woff2') format('woff2'),
+      url('../font/Mondo-BlackItalic.woff') format('woff'),
+      url('/../font/Mondo-BlackItalic.ttf') format('truetype'),
+      url('../font/Mondo-BlackItalic.svg#Mondo-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo';
+  src: url('../font/Mondo-Bold.eot');
+  src: url('../font/Mondo-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-Bold.woff2') format('woff2'),
+      url('../font/Mondo-Bold.woff') format('woff'),
+      url('../font/Mondo-Bold.ttf') format('truetype'),
+      url('../font/Mondo-Bold.svg#Mondo-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Book';
+  src: url('../font/Mondo-BookItalic.eot');
+  src: url('../font/Mondo-BookItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-BookItalic.woff2') format('woff2'),
+      url('../font/Mondo-BookItalic.woff') format('woff'),
+      url('../font/Mondo-BookItalic.ttf') format('truetype'),
+      url('../font/Mondo-BookItalic.svg#Mondo-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraBlack.eot');
+  src: url('../font/Mondo-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraBlack.woff2') format('woff2'),
+      url('../font/Mondo-ExtraBlack.woff') format('woff'),
+      url('../font/Mondo-ExtraBlack.ttf') format('truetype'),
+      url('../font/Mondo-ExtraBlack.svg#Mondo-ExtraBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mondo Extra';
+  src: url('../font/Mondo-ExtraBlackItalic.eot');
+  src: url('../font/Mondo-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Mondo-ExtraBlackItalic.woff2') format('woff2'),
+      url('../font/Mondo-ExtraBlackItalic.woff') format('woff'),
+      url('../font/Mondo-ExtraBlackItalic.ttf') format('truetype'),
+      url('../font/Mondo-ExtraBlackItalic.svg#Mondo-ExtraBlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* end  */
+  
+  @media (max-width: 576px) {
+    body {
+      background-position: 50px -50px;
+      background-size: 500px;
+    }
+  }
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 15px;
+    transition: all 0.25s;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: white;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+  /* slider  */
+  .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 168px;
+    height: 12px;
+    border-radius: 90px;
+    background: rgba(217, 217, 217, 0.50);
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: white;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    display: none;
+}
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-image: url("../images/combat.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  position: relative;
+}
+.mySwiper2 .swiper-pagination span::before {
+  content: "economie";
+  position: absolute;
+  top: -35px;
+  left: 50%;
+    right: auto;
+    transform: translate(-50%, 0px);
+    margin-left: auto;
+    margin-right: auto;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.mySwiper2 .swiper-pagination span:nth-child(2)::before {
+  content: "combat";
+  
+}
+.mySwiper2 .swiper-pagination span:nth-child(3)::before {
+  content: "build";
+ 
+}
+.mySwiper2 .swiper-pagination span:nth-child(4)::before {
+  content: "fuunnn !";
+ 
+}
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/econome.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+}
+
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet-active::before {
+  content: "economie";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+    right: auto;
+    transform: translate(-50%, 0px);
+    margin-left: auto;
+    margin-right: auto;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(2)::before {
+  content: "combat";
+  color: white;
+}
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(3)::before {
+  content: "build";
+  color: white;
+  ;
+}
+.mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(4)::before {
+  content: "fuunnn !";
+  color: white;
+
+}
+.mySwiper2 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 40px);
+}
+.custom {
+  background: linear-gradient(0deg, #160C03 0%, #241407 100%);
+}
+.cards {
+  background: var(--Gradiant-News, linear-gradient(180deg, rgba(0, 0, 0, 0.00) -53.2%, rgba(0, 0, 0, 0.58) 99.94%));
+}
+.hero {
+  background: linear-gradient(180deg, rgba(36, 20, 7, 0.00) 55.5%, #241407 100%),
+  url("../images/Calque.png") lightgray 50% / cover no-repeat;
+}
+.evenement {
+  background: var(--gradiant-yello, linear-gradient(90deg, #FFBC12 0%, #DBFF00 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.communaute {
+  background: var(--gradiant-bluye, linear-gradient(90deg, #12FFF1 0%, #0085FF 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.exploration {
+  background: linear-gradient(90deg, #FFF 0%, #B5B5B5 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+} 
+.mySwiper1 .swiper-button-next, .swiper-button-prev {  
+width: 45px !important;
+height: 74px !important;
+}
+.gradi-orange {
+  background: linear-gradient(90deg, #FFBC12 0%, #DBFF00 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* Position the dropdown menu */
+#dropdown {
+  position: absolute;
+  top: calc(100% + 5px); /* Adjust this value as needed */
+  left: 0;
+  transform: translate(20px, 35px) !important;
+}
+
+/* Show dropdown on hover */
+#dropdownDefaultButton:hover + #dropdown,
+#dropdown:hover {
+  display: block;
+  
+}
+
+
+ @media screen and (max-width: 768px) {
+  /* slider  */
+  .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: #D9D9D9;
+    width: 56px;
+    height: 5px;
+    border-radius: 30px;
+  }
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-image: url("../images/mobilediamond.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active {
+    background-image: url("../images/mobdiamond.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: cover;
+    width: 52px;
+    height: 52px;
+  }
+  /* new  */
+  .mySwiper2 .swiper-pagination span::before {
+    content: "economie";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0px);
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+  }
+  .mySwiper2 .swiper-pagination span:nth-child(2)::before {
+    font-size: 10px;
+    content: "combat";
+   
+  }
+  .mySwiper2 .swiper-pagination span:nth-child(3)::before {
+    font-size: 10px;
+    content: "build";
+    
+  }
+  .mySwiper2 .swiper-pagination span:nth-child(4)::before {
+    font-size: 10px;
+    content: "fuunnn !";
+    
+  } 
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active::before {
+    top: -20px;
+  font-size: 10px;
+    color: white;
+   
+  }
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(2)::before {
+    font-size: 10px;
+    color: white;
+  
+  }
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(3)::before {
+    font-size: 10px;
+    color: white;
+  }
+  .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active:nth-child(4)::before {
+    font-size: 10px;
+    color: white;
+  }
+  /* end  */
+  .mySwiper2 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 22px);
+  }
+  .forstart {
+    justify-content: start !important; 
+  }
+} 

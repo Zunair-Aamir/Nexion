@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-dark-blue ">
+  <nav class="relative max-w-[1480px] px-5 mx-auto sm:pt-[14px] xxs:py-[5px] sm:py-0 xxs:h-[45px] md:h-auto">
+    <!-- Flex container -->
+    <div class="flex md:flex-row xxs:flex-row-reverse  items-center md:!justify-between 
+    xxs:justify-start forstart xxs:h-full md:h-auto ">
+      <!-- Logo -->
+     
+      <div class="">
+        <img src="images/logo.png" alt="logo" class="xl:pl-[122px] md:pl-[0] xxs:absolute xxs:z-10 md:z-0 xxs:left-[50%] md:left-auto
+        xxs:transform xxs:translate-x-[-50%] md:transform-none md:translate-x-0  xxs:top-[7px] md:relative xl:top-4 md:top-2
+        md:w-auto md:h-auto xxs:w-[32px] xxs:h-[34px]" />
+      </div>
+      
+      <!-- Menu Items -->
+      <div class="hidden md:flex items-center xl:mt-0 md:mt-[-8px]">
+        <a href="#" class="hover:text-dark-purple text-whitee font-Poppins lg:text-base md:text-sm font-bold">Notre histoire</a>
+        <a href="#" class="hover:text-dark-purple xl:pl-[41px] lg:pl-6 md:pl-3 text-whitee font-Poppins lg:text-base md:text-sm font-bold">Nouveautés</a>
+        <a href="#" class="hover:text-dark-purple xl:pl-[52px] lg:pl-6  md:pl-3 text-whitee font-Poppins lg:text-base md:text-sm font-bold">Voter</a> 
+        <div class="relative">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="xl:ml-[69px] lg:ml-6  md:ml-3
+        text-whitee hover:text-dark-purple font-Poppins lg:text-base md:text-sm font-bold
+          focus:ring-0 focus:outline-none focus:ring-blue-300  text-center inline-flex items-center" type="button">Outils <svg class="w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdown" class="z-10 hidden bg-dark-blue divide-y divide-gray-100 rounded-lg shadow w-44">
+      <ul class="py-2 lg:text-base md:text-sm text-whitee" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple  text-whitee font-Poppins text-base font-bold">Settings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Earnings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Sign out</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+  
+  
+
+        <!-- emd  -->
+      </div>
+      <!-- Button -->
+      <div class="flex gap-[9px]">
+    <div class="relative">
+    <button type="button" class="hidden lg:w-[142px] lg:h-[42px] md:w-[112px] md:h-[42px] bg-dark-purple rounded-[10px] text-whitee font-Montserrat
+    text-xs font-bold uppercase  
+    hover:bg-whitee hover:text-dark-purple md:block">boutique</button>
+    <img src="images/gem4.svg" alt="gem4" class="absolute top-[-5px]">  
+    <img src="images/gem3.svg" alt="gem3" class="absolute bottom-[5px] left-[15px]">     
+    <img src="images/gem2.svg" alt="gem2" class="absolute right-0 top-[-5px]"> 
+    </div>
+    
+    <button type="button" class="hidden lg:w-[142px] lg:h-[42px] md:w-[112px] md:h-[42px] bg-whitee rounded-[10px] text-dark-purple font-Montserrat
+    lg:text-lg md:text-base font-bold uppercase  
+    hover:bg-dark-purple hover:text-whitee md:block">JOUER</button>
+    <div class="hidden md:flex flex-col items-center lg:ml-[12px] md:ml-0 gap-[2px]">
+        <img src="images/steve.png" alt="steve">
+        <p class="text-whitee font-Poppins text-[6px] font-bold">Account</p>
+    </div>
+    </div>
+      <!-- Hamburger Icon -->
+      <button
+        id="menu-btn"
+        class="block hamburger sm:mt-[-15px] xxs:mt-[0px] md:hidden focus:outline-none"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div
+        id="menu"
+        class="fixed z-[5] xxs:top-0 h-screen flex-col items-center hidden self-end pt-[115px] pb-[28px]  gap-[12px] font-bold bg-dark-blue backdrop-blur-xl  xxs:w-full sm:self-center left-0 right-6">
+        <!-- start  -->
+        <a href="#" class="hover:text-dark-purple text-whitee font-Poppins text-base font-bold pt-[70px]">Notre histoire</a>
+        <a href="#" class="hover:text-dark-purple xl:pl-[41px] lg:pl-6 md:pl-3 text-whitee font-Poppins text-base font-bold">Nouveautés</a>
+        <a href="#" class="hover:text-dark-purple xl:pl-[52px] lg:pl-6  md:pl-3 text-whitee font-Poppins text-base font-bold">Voter</a>
+        <!-- Dropdown -->
+        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="xl:ml-[69px] lg:ml-6  md:ml-3
+        text-whitee hover:text-dark-purple font-Poppins lg:text-base md:text-sm font-bold
+          focus:ring-0 focus:outline-none focus:ring-blue-300  text-center inline-flex items-center" type="button">Outils <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdown1" class="z-10 hidden bg-dark-blue divide-y divide-gray-100 rounded-lg shadow w-44">
+      <ul class="py-2 lg:text-base md:text-sm text-whitee" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple  text-whitee font-Poppins text-base font-bold">Settings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Earnings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:text-dark-purple text-whitee font-Poppins text-base font-bold">Sign out</a>
+        </li>
+      </ul>
+  </div>
+         <!-- Button -->
+      <div>
+        <div class="relative mt-[137px]">
+        <button type="button" class="w-[244px] h-[53px]  bg-dark-purple rounded-[10px] text-whitee font-Montserrat
+        text-xl font-extrabold uppercase  
+        hover:bg-whitee hover:text-dark-purple md:block">
+        <p class="pt-[7px]">boutique</p><span class="text-[10px] font-normal block mt-[-7px]">Cadeau du jour = GRATUIT !</span></button>
+        <img src="images/gem4.svg" alt="gem4" class="absolute top-[-10px]">  
+        <img src="images/gem3.svg" alt="gem3" class="absolute bottom-[-5px] left-[15px]">     
+        <img src="images/gem2.svg" alt="gem2" class="absolute right-0 top-[-10px]"> 
+        </div>
+        
+        <button type="button" class="mt-[13px] w-[244px] h-[53px] bg-whitee rounded-[10px] text-dark-purple font-Montserrat
+        text-xl font-extrabold uppercase  
+        hover:bg-dark-purple hover:text-whitee md:block">
+        <p class="pt-[7px]">JOUER</p><span class="text-[10px] font-normal block mt-[-7px]">Launcher Minecraft 1.20</span></button>
+          </div>
+        <!-- end  -->
+      </div>
+     
+    </div>
+    
+  </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="xl:max-w-full mx-auto  
+  bg-no-repeat bg-cover bg-[center_top_1rem] hero">    
+    <div class="max-w-[680px] mx-auto">
+        <div class=" flex flex-col items-center">
+            <img src="images/NexionLogo.png" alt="NexionLogo" 
+            class="xl:mt-[174px] lg:mt-[130px] md:mt-[125px] xxs:mt-[111px] md:w-auto xxs:w-[286px]">
+            <!-- popup  -->
+          <!-- Image -->
+<img src="images/video.png" alt="video" class="md:w-auto xxs:w-[102px]" onclick="openModal('modelConfirm')">
+
+<!-- Modal -->
+<div id="modelConfirm" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+    <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white w-full max-w-[1000px]">
+        <div class="flex justify-end p-2 absolute top-[-30px] w-full h-[20px]">
+            <button onclick="closeModal('modelConfirm')" type="button"
+                class="text-whitee bg-transparent  hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-0 pt-0 text-center">           
+        <!-- HTML -->
+        <iframe id="videoPlayer" class="w-full sm:h-[500px] xxs:h-[300px]" src="https://www.youtube.com/embed/KE6j5YsPC9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>           
+            <!-- popup ed  -->
+<button type="button" class="md:h-[106px] md:w-[466px] xxs:w-[244px] xxs:h-[53px] bg-whitee hover:bg-light-purple lg:mt-[135px] md:mt-[120px] xxs:mt-[113px] md:rounded-[20px] xxs:rounded-[10px]
+        border-[2px] border-[#F2F2F2] hover:border-light-purple text-light-purple hover:text-whitee font-Montserrat md:text-[40px] xxs:text-xl font-extrabold
+leading-[40px] uppercase"><p class="mb-[6px]">JOUER</p><span class=" md:text-2xl xxs:text-xs sm:mt-[-5px] xxs:mt-[-10px] block">gratuitement</span></button>
+        </div>
+    </div>
+    
+  </section>
+  <!-- minecraft  -->
+    <section class=" bg-mine-craft sm:pt-[91px] xxs:pt-[65px] sm:pb-0 xxs:pb-[0px]">
+        <div class="max-w-[1480px] px-5 mx-auto">
+            <h2 class="text-dark-orange text-center font-Mondo md:text-5xl sm:text-3xl  xxs:text-base font-extrabold uppercase">minecraft MODDé 1.20</h2>
+            <p class="max-w-[956px] mx-auto text-whitee text-center font-Mondo lg:text-6xl md:text-5xl sm:text-4xl xxs:text-xl xxs:leading-5
+            font-extrabold uppercase sm:pt-[30px] xxs:pt-[10px]">découvrez une nouvelle
+                façon de jouer</p>
+             <!-- Swiper -->
+            <div class="swiper mySwiper md:mt-[93px] xxs:mt-[49px]">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-light-cream md:rounded-[30px] xxs:rounded-[10px] md:h-[529px] sm:h-[329px] xxs:h-[167px] max-w-[954px] mx-auto">
+                        <h2 class="text-blackk font-Montserrat md:text-6xl sm:text-3xl xxs:text-xl font-extrabold uppercase
+                        sm:pl-[71px] xxs:pl-5  md:pt-[418px] sm:pt-[280px] xxs:pt-[132px]">confectionnez</h2>
+                    </div>
+                    <p class="mt-[31px] text-dark-cream font-Montserrat md:text-[27px] sm:text-lg xxs:text-[9px] max-w-[954px] mx-auto font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-light-cream md:rounded-[30px] xxs:rounded-[10px] md:h-[529px] sm:h-[329px] xxs:h-[167px] max-w-[954px] mx-auto">
+                        <h2 class="text-blackk font-Montserrat md:text-6xl sm:text-3xl xxs:text-xl font-extrabold uppercase
+                        sm:pl-[71px] xxs:pl-5 md:pt-[418px] sm:pt-[280px] xxs:pt-[132px]">confectionnez</h2>
+                    </div>
+                    <p class="mt-[31px] text-dark-cream font-Montserrat md:text-[27px] sm:text-lg xxs:text-[9px] max-w-[954px] mx-auto font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+                </div>
+                <!-- 3  -->
+                <div class="swiper-slide">
+                    <div class="bg-light-cream md:rounded-[30px] xxs:rounded-[10px] md:h-[529px] sm:h-[329px] xxs:h-[167px] max-w-[954px] mx-auto">
+                        <h2 class="text-blackk font-Montserrat md:text-6xl sm:text-3xl xxs:text-xl font-extrabold uppercase
+                        sm:pl-[71px] xxs:pl-5  md:pt-[418px] sm:pt-[280px] xxs:pt-[132px]">confectionnez</h2>
+                    </div>
+                    <p class="mt-[31px] text-dark-cream font-Montserrat md:text-[27px] sm:text-lg xxs:text-[9px] max-w-[954px] mx-auto font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+                </div>
+                <!-- end  -->
+                </div>
+                <div class="swiper-pagination !static sm:mt-[54px] xxs:mt-[4px]"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Nouveautés  -->
+    <section class="bg-mine-craft ">
+        <div class="max-w-[1280px] px-5 mx-auto md:pt-[224px] xxs:pt-[65px]">
+            <h2 class="text-dark-orange text-center font-Mondo sm:text-5xl xxs:text-base font-extrabold uppercase">nouveautés</h2>
+            <p class="max-w-[650px] mx-auto text-dark-cream text-center font-Mondo sm:text-6xl xxs:text-xl font-extrabold uppercase sm:pt-[30px] xxs:pt-[10px]">
+                explorez toutes
+                nos actualités
+            </p>
+             <!-- Swiper -->
+            <div class="swiper mySwiper4 !pb-[50px] mt-[69px]">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="xl:w-[373px] md:max-w-[373px] sm:max-w-full sm:w-full xxs:max-w-full xxs:w-full h-[250px] cards rounded-[30px] lg:pl-[32px] md:pl-[10px] sm:pl-[32px] xxs:pl-5 xl:pt-[159px] lg:pt-[140px] md:pt-[160px] sm:pt-[140px] xxs:pt-[160px]">
+                    <div class="flex items-center justify-between">
+                    <div>
+                    <h3 class="max-w-[224px] text-whitee font-Inter
+                    xl:text-xl lg:text-lg md:text-sm font-black sm:text-xl xxs:text-sm uppercase">deviens la légende de ce monde !...</h3>
+                    <p class="text-medium-cream font-Inter text-[10px] font-normal uppercase pt-3">26 décembre 2023</p>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/arrow.svg" alt="arrow" class="mr-[26px]"></a>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="xl:w-[373px] md:max-w-[373px] sm:max-w-full sm:w-full xxs:max-w-full xxs:w-full h-[250px] cards rounded-[30px] lg:pl-[32px] md:pl-[10px] sm:pl-[32px] xxs:pl-5 xl:pt-[159px] lg:pt-[140px] md:pt-[160px] sm:pt-[140px] xxs:pt-[160px]">
+                    <div class="flex items-center justify-between">
+                    <div>
+                    <h3 class="max-w-[224px] text-whitee font-Inter
+                    xl:text-xl lg:text-lg md:text-sm font-black sm:text-xl xxs:text-sm uppercase">deviens la légende de ce monde !...</h3>
+                    <p class="text-medium-cream font-Inter text-[10px] font-normal uppercase pt-3">26 décembre 2023</p>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/arrow.svg" alt="arrow" class="mr-[26px]"></a>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="xl:w-[373px] md:max-w-[373px] sm:max-w-full sm:w-full xxs:max-w-full xxs:w-full h-[250px] cards rounded-[30px] lg:pl-[32px] md:pl-[10px] sm:pl-[32px] xxs:pl-5 xl:pt-[159px] lg:pt-[140px] md:pt-[160px] sm:pt-[140px] xxs:pt-[160px]">
+                    <div class="flex items-center justify-between">
+                    <div>
+                    <h3 class="max-w-[224px] text-whitee font-Inter
+                    xl:text-xl lg:text-lg md:text-sm font-black sm:text-xl xxs:text-sm uppercase">deviens la légende de ce monde !...</h3>
+                    <p class="text-medium-cream font-Inter text-[10px] font-normal uppercase pt-3">26 décembre 2023</p>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/arrow.svg" alt="arrow" class="mr-[26px]"></a>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+              </div>
+              <div class="swiper-pagination !bottom-[0px]"></div>
+            </div>
+            <!-- end  -->
+            <div class="max-w-[322px] mx-auto"> 
+              <button class="mt-[52px] sm:mb-[134px] xxs:mb-[50px] rounded-[20px] shadow-neon bg-whitee hover:text-whitee hover:bg-purple2 sm:w-[322px] xxs:w-[280px] h-[58px] text-black font-Montserrat text-base font-bold uppercase">voir plus d’actualités</button>
+            </div>
+            </div>
+    </section>
+    <!-- evenement  -->
+    <section class="bg-[url('../images/evenement.png')] bg-no-repeat bg-center bg-mine-craft bg-cover py-[135px] sm:block xxs:hidden">
+      <div class="relative top-[-145px] grid place-items-center ">
+        <img src="images/diamondline.png" alt="" class="">
+      </div>
+        <div class="max-w-[1210px]  mx-auto">
+          <!-- Swiper -->
+         <div class="swiper mySwiper1 ">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="xl:max-w-[954px] lg:max-w-[850px] md:max-w-[650px] xxs:max-w-[450px] mx-auto">
+                    <img src="images/swiper2.png" alt="swiper2">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="xl:max-w-[954px] lg:max-w-[850px] md:max-w-[650px] xxs:max-w-[450px] mx-auto">
+                    <img src="images/swiper2.png" alt="swiper2">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="xl:max-w-[954px] lg:max-w-[850px] md:max-w-[650px] xxs:max-w-[450px] mx-auto">
+                    <img src="images/swiper2.png" alt="swiper2">
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next">
+                <img src="images/right.svg" alt="left" class="w-[45px] h-[74px]">
+            </div>
+            <div class="swiper-button-prev ">
+                <img src="images/left.svg" alt="right" class="w-[45px] h-[74px]">
+            </div>
+        </div>
+        <h2 class="mt-[52px]  gradi-orange text-center font-Montserrat md:text-[75px] sm:text-6xl font-extrabold uppercase">événements</h2>
+        <p class="pt-[11px] max-w-[646px] mx-auto  text-dark-cream font-Montserrat md:text-[22px] sm:text-lg font-medium md:px-0 sm:px-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+        </div>
+        <!-- slider end  -->
+    </section>
+    <!-- section for moble  -->
+    <section class="sm:hidden xxs:block">
+    <div class="bg-[url('../images/evenement.png')] bg-no-repeat bg-center bg-mine-craft py-[44px]">
+    <div class="flex flex-col items-center">
+    <img src="images/greyline.png" alt="greyline" class="relative top-[-50px]">
+    <img src="images/RecEvenements.png" alt="RecEvenements" class="">
+    <div class="flex items-end mt-[-15px]">
+      <img src="images/energy.svg" alt="energy">
+      <h2 class="font-Montserrat text-[30px] font-extrabold uppercase evenement">événements</h2>
+    </div>
+    <p class="max-w-[284px] mx-auto text-dark-cream font-Montserrat text-[9px] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+
+    </div>
+  </div> 
+    <!-- two  -->
+    <div class="bg-[url('../images/evenement.png')] bg-no-repeat bg-center bg-mine-craft py-[44px]">
+    <div class="flex flex-col items-center">
+      <img src="images/orangeline.png" alt="orangeline" class="relative top-[-50px]">
+      <img src="images/RecEvenements.png" alt="RecEvenements" class="">
+      <div class="flex items-end mt-[-15px]">
+        <img src="images/hand.svg" alt="hand">
+        <h2 class="font-Montserrat text-[30px] font-extrabold uppercase communaute">communauté</h2>
+      </div>
+      <p class="max-w-[284px] mx-auto text-dark-cream font-Montserrat text-[9px] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+  
+      </div>
+    </div>
+    <!-- three  -->
+    <div class="bg-[url('../images/evenement.png')] bg-no-repeat bg-center bg-mine-craft py-[44px]">
+    
+    <div class="flex flex-col items-center">
+      <img src="images/blueline.png" alt="blueline" class="relative top-[-50px]">
+      <img src="images/RecEvenements.png" alt="RecEvenements" class="">
+      <div class="flex items-end mt-[-15px]">
+        <img src="images/watch.svg" alt="watch">
+        <h2 class="font-Montserrat text-[30px] font-extrabold uppercase exploration">exploration</h2>
+      </div>
+      <p class="max-w-[284px] mx-auto text-dark-cream font-Montserrat text-[9px] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla diam, convallis id metus eget, lobortis commodo nibh. Donec sollicitudin mauris quis nisl</p>
+      <img src="images/greyline.png" alt="greyline" class="flex flex-col items-center justify-center relative bottom-[-40px]">  
+    </div>
+      <!-- end  -->
+    </div>
+  </section>
+    <!-- une aventure unique -->
+    <section class="bg-mine-craft mt-[-10px]">
+      <div class="max-w-[1480px] mx-auto px-5">
+        <h2 class="text-dark-orange text-center font-Mondo md:text-5xl sm:text-3xl xxs:text-base font-extrabold uppercase sm:pt-[119px] xxs:pt-[32px]">une aventure unique</h2>
+        <p class="max-w-[840px] mx-auto sm:pt-[30px] xxs:pt-[10px] text-whitee text-center font-Mondo 
+        lg:text-6xl md:text-5xl sm:text-2xl xxs:text-xl xxs:leading-5 font-extrabold uppercase">deviendras-tu la légende
+          que ce monde attend ?</p>
+      </div>
+      <!-- slider  -->
+      <div class="swiper mySwiper2 max-w-[1440px] mx-auto md:mt-[73px] xxs:mt-[40px] ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img src="images/economie.png" alt="economie" class="sm:block xxs:hidden">
+              <img src="images/slide1.png" alt="slide1" class="w-full sm:hidden xxs:block">
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div>
+              <img src="images/economie.png" alt="economie" class="sm:block xxs:hidden">
+              <img src="images/slider2.png" alt="slider2" class="w-full sm:hidden xxs:block">
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div>
+              <img src="images/economie.png" alt="economie" class="sm:block xxs:hidden">
+              <img src="images/slide2.png" alt="slide2" class="w-full sm:hidden xxs:block">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="images/economie.png" alt="economie" class="sm:block xxs:hidden">
+              <img src="images/slide4.png" alt="slide4" class="w-full sm:hidden xxs:block">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+
+        </div>
+      </div>
+    </section>
+    <!-- men with sword  -->
+    <section class="custom bg-mine-craft sm:pt-[57px] xxs:pt-[21px] ">
+      <div class="flex md:flex-row xxs:flex-col-reverse items-center justify-between max-w-[1160px] px-5 mx-auto" >
+        <div class="xxs:flex xxs:flex-col xxs:items-center md:items-start  ">
+          <h2 class="max-w-[500px] gradi-orange  font-Poppins xl:text-6xl xl:leading-[80px] lg:text-5xl md:text-4xl
+          sm:text-3xl xxs:text-2xl font-bold sm:text-left xxs:text-center">Rejoignez nous !</h2>
+          <p class="max-w-[468px] text-whitee font-Poppins xl:text-xl lg:text-lg md:text-sm sm:text-base xxs:text-sm md:font-bold xxs:font-medium sm:pt-[18px] xxs:pt-[10px]">Chaque coin recèle des secrets à découvrir, des défis à relever et des trésors à déterrer.</p>
+          <p class="max-w-[468px] text-whitee font-Poppins xl:text-xl lg:text-lg md:text-sm sm:text-base xxs:text-sm md:font-bold xxs:font-medium  pt-[30px]">Forgez des alliances, affrontez des créatures redoutables et bâtissez votre propre légende. L'aventure commence dès que vous franchissez les portes de Nexion Adventure !</p>
+        <button type="button" class="mt-[28px] sm:w-[366px] xxs:w-[288px] sm:h-[62px] xxs:h-[58px] bg-light-yellow hover:bg-purple2 hover:text-white rounded-[20px]
+        text-purple2 font-Montserrat sm:text-xl xxs:text-base font-bold uppercase ">REJOINDRE L’aventure</button>
+        </div>
+        <div>
+          <img src="images/men.png" alt="men" class="md:block xxs:hidden">
+          <img src="images/image10.png" alt="image10" class="md:hidden xxs:block">
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#100802] ">
+      <div class="pt-[50px] flex flex-col items-center">
+        <img src="images/Nexionfooter.png" alt="NexionLogo" class="z-40" class="sm:w-auto xxs:w-[282px]">
+        <div class="relative sm:mt-[-45px] xxs:mt-[-27px] z-30 sm:rounded-[35px] xxs:rounded-[20px] sm:w-[461px] xxs:w-[258px] sm:h-[122px] xxs:h-[68px] bg-[#D9D9D94D] flex items-center justify-center sm:gap-[57px] xxs:gap-[32px]">
+          <a href="#">
+            <img src="images/tiktok.svg" alt="tiktok" class="sm:w-auto sm:h-auto xxs:w-[19px] xxs:h-[21px]">
+          </a>
+          <a href="#">
+            <img src="images/youtube.svg" alt="youtube" class="sm:w-auto sm:h-auto xxs:w-[33px] xxs:h-[23px]">
+          </a>
+          
+          <a href="#">
+            <img src="images/discord.svg" alt="discord" class="sm:w-auto sm:h-auto xxs:w-[27px] xxs:h-[21px]">
+          </a>
+          
+          <a href="#">
+          <img src="images/twitter.svg" alt="twitter" class="sm:w-auto sm:h-auto xxs:w-[21px] xxs:h-[18px]">
+
+          </a>
+        </div>
+        <!-- button  -->
+        <div class="mt-[50px] sm:flex md:flex-row sm:flex-col items-center lg:gap-[59px] md:gap-6 sm:gap-2 xxs:hidden">
+          <button type="button" class="lg:w-[164px] h-[58px] sm:w-[134px] bg-whitee hover:bg-purple2 hover:text-white rounded-[20px]
+          text-black font-Montserrat text-xl font-bold uppercase ">jouer</button>
+          <button type="button" class="lg:w-[211px] h-[58px] sm:w-[181px] bg-whitee hover:bg-purple2 hover:text-white rounded-[20px]
+          text-black font-Montserrat text-xl font-bold uppercase ">assistance</button>
+          <button type="button" class="lg:w-[164px] h-[58px] sm:w-[134px] bg-whitee hover:bg-purple2 hover:text-white rounded-[20px]
+          text-black font-Montserrat text-xl font-bold uppercase ">voter</button>
+          <button type="button" class="lg:w-[197px] h-[58px] sm:w-[167px] bg-whitee hover:bg-purple2 hover:text-white rounded-[20px]
+          text-black font-Montserrat text-xl font-bold uppercase ">boutique</button>
+        </div>
+        <div class="mt-[50px] xxs:flex flex-col items-center xxs:gap-[12px]  sm:hidden">
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">jouer</a>
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">assistance</a>
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">devenir affilié</a>
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">voter</a>
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">mon compte</a>
+          <a class="text-whitee hover:text-graypur font-Montserrat text-sm font-bold uppercase">boutique</a>
+        </div>
+
+        <div class="flex md:flex-row xxs:flex-col items-center md:gap-[64px] sm:gap-2 xxs:gap-[12px] sm:mt-[25px] xxs:mt-[12px]">
+          <a href="#">
+            <p class="hover:text-whitee text-graypur font-Montserrat text-base font-bold uppercase">mentions légales</p>
+          </a>
+         <a href="">
+          <p class="hover:text-whitee text-graypur font-Montserrat text-base font-bold uppercase">politique de cookies</p>
+         </a>
+          <a href="#">
+            <p class="hover:text-whitee text-graypur font-Montserrat text-base font-bold uppercase">cgu/cgv</p>
+          </a>
+          
+        </div>
+        <p class="pt-[53px] text-whitee font-Poppins text-base font-bold sm:max-w-full xxs:max-w-[185px] mx-auto">©2024 NEXION GAMES. Tous droits réservés</p>
+        <p class="pt-[15px] sm:pb-[130px] xxs:pb-[48px] text-[#8A8A8A] font-Poppins md:max-w-[700px] sm:max-w-[410px] xxs:max-w-[208px] text-center sm:text-base xxs:text-[10px] font-bold">Site Minecraft non officiel, non approuvé ou associé à Mojang ou Microsoft.</p>
+      </div>
+    </footer>
+    <!-- f  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- second  -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <!-- third  -->
+      <script>
+        var swiper = new Swiper(".mySwiper2", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <!-- fourth  -->
+      <script>
+        var swiper = new Swiper(".mySwiper4", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+          450: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          650: {
+            slidesPerView: 1.8,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+        });
+      </script>
+</body>
+</html>
